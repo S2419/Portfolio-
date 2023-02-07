@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var i = 1;
+var text = "";
+while(i < 10) {
+	text+="<br>The number is " + i;
+	i++;
+}
+	console.log(text);
+	
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = text">Click me</button>
+
+</body>
+
+</html>

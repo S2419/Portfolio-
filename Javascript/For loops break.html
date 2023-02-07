@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var i = 0;
+var text= ""
+for(i=0; i < 100; i++){
+	if (i === 3) {break;}
+	text += "The number is " + i + "<br>";
+}
+	
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = text">Click me</button>
+
+</body>
+
+</html>
