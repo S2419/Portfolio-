@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div id="header">
+	<div class="container">
+      <nav>
+		<img src="images/logo.jpg" class="logo">
+        <ul>
+		  <li><a href="Index.html">Home</a></li>	
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Services.html">Services</a></li>
+		  <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+	  <div class="header-text">
+		<p>Simba Nyamazana</p>
+		<h1>Fullstack developer</h1>
+	  </div>
+    </div>
+  </div>	
+   
+      <div id="about">
+		<div class="container">
+			<div class="row"> 
+				<div class="about-col-1 img">
+					<img class="img" src ="images/Me.jpg">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+        <p>Fullstack developer trained with ITCareerSwitch and self taught located in the UK, with a wealth of knowledge which can be viewed below:</p>
+	  <div class="tab-titles">
+		<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+		<p class="tab-links" onclick="opentab('education')">Education</p> 
+	  </div> 
+	  <div class="tab-contents active-tab" id="skills">
+		<ul>
+			<li>Html</li>
+			<li>CSS</li> 
+			<li>Javascript</li>
+			<li>Python</li>
+			<li>Jquery</li>
+			<li>PHP + laravel</li>
+			<li>Machine Learning</li>
+			<li>SQL + mySQL</li>
+		</ul>
+	   </div>
+	  <div class="tab-contents" id="education">
+		<ul>
+			<li><span>June2022 - April 2023:</span><br>ITCareerSwitch Coding Traineeship / Fullstack developer</li>
+			<li><span>September 2016 - July 2019:</span><br>Bsc Environmental Management with Business</li> 
+		</ul> 
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+    <footer>
+      <p>Copyright © 2023 Simba Portfolio</p>
+    </footer>
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		
+		function opentab(tabname) {
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+  </body>
+</html>
